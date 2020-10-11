@@ -1,4 +1,3 @@
-
 function randomWord(times) {
   const lowerEnglish = 'abcdefghijklmnopqrstuvwxyz'
 
