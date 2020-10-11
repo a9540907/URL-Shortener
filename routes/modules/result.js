@@ -27,6 +27,7 @@ router.post('/', (req, res) => {
       } else {
         // shortUrl = `http://localhost:${PORT}/${getRandomWord(5)}`
         shortUrl = `${localUrl}/${getRandomWord(5)}`
+        console.log(shortUrl)
         Simplify.create({ name, shortUrl })
       }
       res.render('result', { Url: shortUrl })
