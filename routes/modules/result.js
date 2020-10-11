@@ -9,6 +9,9 @@ router.post('/', (req, res) => {
   console.log('req.body', req.body)
 
   const localUrl = req.protocol + '://' + req.get('host')
+  console.log(req.protocol)
+  console.log(req.get('host'))
+  console.log(localUrl)
 
   let shortUrl = ""
 
